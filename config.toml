@@ -1,0 +1,4 @@
+baseURL = "https://medrano.eu/"
+languageCode = "es-es"
+title = "medrano.eu"
+theme = "noteworthy"
