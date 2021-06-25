@@ -1,4 +1,70 @@
-baseURL = "https://medrano.eu/"
+baseURL = "https://medrano.eu"
 languageCode = "es-es"
 title = "medrano.eu"
 theme = "noteworthy"
+enableRobotsTXT = true
+paginate = 4
+summaryLength = 10
+googleAnalytics = ""
+
+[taxonomies]
+  tag = "tags"
+
+[author]
+    name = "ramon"
+
+# Set to false to disallow raw HTML in markdown files
+[markup.goldmark.renderer]
+    unsafe = false
+
+[params]
+    math = true
+    # Blog description at the top of the homepage. Supports markdown.
+    description = ""
+
+    showReadMore = true
+
+    twitter = "https://twitter.com/rmedranollamas"
+    instagram = "https://www.instagram.com/rmedranollamas/"
+    github = "https://github.com/rmedranollamas"
+    googlescholar = "https://scholar.google.com/citations?user=rHeBrlcAAAAJ"
+
+[[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+[[menu.main]]
+    name = "Archives"
+    identifier = "archives"
+    url = "/archives/"
+    weight = 3
+
+# Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
